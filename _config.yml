@@ -1,14 +1,15 @@
 # Site settings
-title: miguellara.github.io
-# email: not for now
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: MiguelLara.github.io
+email: miguel@mac.com
+description: >
+  Notes to myself, hints, fixes and ramblings –specially about Swift–,
+  that may be useful to others.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://miguellara.github.io" # the base hostname & protocol for your site
 twitter_username: bigbrowntheory
 github_username:  miguellara
+
+exclude: ["Gemfile", "Gemfile.lock"]
 
 # Build settings
 markdown: kramdown
