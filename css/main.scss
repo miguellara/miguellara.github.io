@@ -11,14 +11,14 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$display-font-family: 'Bree Serif', serif;
+$display-font-family: 'Dosis', $base-font-family;
 $display-font-weight: 400;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #ff6b00;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -43,6 +43,10 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+pre, code {
+	font-family: Monaco, monospace;
 }
 
 

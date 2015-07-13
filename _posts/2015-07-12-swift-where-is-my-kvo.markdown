@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Where is my KVO?"
+title:  "Where's my KVO?"
+summary: "Swift class properties that post KVO notifications."
 date:   2015-07-11 22:00:00
 categories: swift workaround snippet kvo
 ---
