@@ -643,3 +643,24 @@ h2.month {
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
 }
+
+
+// Code in general (inline & blocks)
+code {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	color: crimson;
+	padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+}
+
+// Block of code (specific)
+pre {
+	code {
+		font-size: inherit;
+	}
+}
