@@ -8,7 +8,7 @@ categories: swift workaround snippet kvo
 
 I love my **KVO** ([Key-Value Observing](http://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/KeyValueObserving/)) and I have used it like crazy in the past in Objective-C, lately through [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa). And it was the first thing that I missed when I started working with Swift.
 
-One solution is to mark your class with `@objc`. `NSObject` is no longer works it magic behind pure Swift classes, and Swift attributes/properties no longer take part on Key-Value coding. In Objective-C you could rely on synthesized `@property`'s or even override `+ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key`.
+One solution is to mark your class with `@objc`. `NSObject` is no longer works it magic behind pure Swift classes, and Swift attributes/properties no longer take part on Key-Value coding. In Objective-C you could rely on synthesized ```@property```'s or even override `+ (NSSet<NSString *> *)keyPathsForValuesAffectingValueForKey:(NSString *)key`.
 
 The best solution I have for now, to keep classes purely in Swift, is the following snippet. Use it as a template to make Swift properties that generate KVO notifications when properties are set.
 

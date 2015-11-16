@@ -1,15 +1,56 @@
-# Site settings
-title: MiguelLara.github.io
-email: miguel@mac.com
-description: >
-  Notes to myself, hints, fixes and ramblings –specially about Swift–,
-  that may be useful to others.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://miguellara.github.io" # the base hostname & protocol for your site
+name: Miguel Lara's Coding Blog
+description: Notes to myself, hints, fixes and ramblings –specially about Swift.
+#meta_description: "Your New Jekyll Site, Blogging about stuffs"
+
+aboutPage: false
+
+paginate: 20
+baseurl: /
+domain_name: 'http://miguellara.github.io'
+
 twitter_username: bigbrowntheory
 github_username:  miguellara
 
-exclude: ["Gemfile", "Gemfile.lock"]
+# Integrations
+#google_analytics: 'UA-XXXXXXXX-X'
+#disqus: false
+#disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://miguellara.github.io'
+author:         'Miguel Lara <miguel@mac.com>'
+authorTwitter:  'bigbrowntheory'
+
+# URL
+permalink:       /:year/:title/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
+gems: [jekyll-gist, jekyll-paginate]
+exclude: ["Gemfile", "Gemfile.lock"]
+
+
+sass:
+    sass_dir: assets/css
+    style: compressed
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
